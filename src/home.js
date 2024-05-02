@@ -2,10 +2,10 @@
 import pizzaOven from "./assets/pizza_oven.jpg";
 import ingredients from "./assets/ingredients.jpg";
 
-function makeHero() {
+function makeHero(msg) {
   const ctn = document.getElementById("hero");
   ctn.classList.add("hero-home");
-  ctn.innerHTML = "Best Pizza north of Italia";
+  ctn.innerHTML = msg;
 }
 
 function makeContentFirstSec() {
