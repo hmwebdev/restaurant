@@ -1,6 +1,7 @@
 import "./style.css";
 import { makeHero, makeContentFirstSec, makeContentSecondSec } from "./home.js";
 import { makeFirstSectionMenu } from "./menu.js";
+import { makeFirstSectionContact } from "./contact.js";
 const ctn = document.getElementById("content");
 
 // Event listener for the menu
@@ -19,6 +20,14 @@ document
     clearDom();
     makeHero("Menu");
     makeFirstSectionMenu();
+  });
+
+document
+  .getElementById("nav-contact-button")
+  .addEventListener("click", function () {
+    clearDom();
+    makeHero("Contact");
+    makeFirstSectionContact();
   });
 
 function clearDom() {
